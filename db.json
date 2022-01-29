@@ -1,12 +1,12 @@
-
-
 {
   "food": [
     {
       "id": 1,
       "name": "apple",
       "calories": 88,
-      "dietary_preferences": ["vegan"],
+      "dietary_preferences": [
+        "vegan"
+      ],
       "serving_size": 6,
       "serving_size_units": "oz"
     },
@@ -14,7 +14,9 @@
       "id": 2,
       "name": "chicken breast",
       "calories": 125,
-      "dietary_preferences": ["keto"],
+      "dietary_preferences": [
+        "keto"
+      ],
       "serving_size": 3,
       "serving_size_units": "oz"
     },
@@ -22,7 +24,9 @@
       "id": 3,
       "name": "whole milk",
       "calories": 240,
-      "dietary_preferences": ["keto"],
+      "dietary_preferences": [
+        "keto"
+      ],
       "serving_size": 8,
       "serving_size_units": "oz"
     },
@@ -30,7 +34,11 @@
       "id": 4,
       "name": "broccoli",
       "calories": 30,
-      "dietary_preferences": ["vegan", "vegetarian", "keto"],
+      "dietary_preferences": [
+        "vegan",
+        "vegetarian",
+        "keto"
+      ],
       "serving_size": 3,
       "serving_size_units": "oz"
     },
@@ -38,7 +46,11 @@
       "id": 5,
       "name": "almonds",
       "calories": 164,
-      "dietary_preferences": ["vegan", "keto", "vegetarian"],
+      "dietary_preferences": [
+        "vegan",
+        "keto",
+        "vegetarian"
+      ],
       "serving_size": 1,
       "serving_size_units": "oz"
     },
@@ -46,7 +58,11 @@
       "id": 6,
       "name": "lentils",
       "calories": 230,
-      "dietary_preferences": ["vegan", "vegetarian", "keto"],
+      "dietary_preferences": [
+        "vegan",
+        "vegetarian",
+        "keto"
+      ],
       "serving_size": 1,
       "serving_size_units": "cup"
     },
@@ -54,7 +70,10 @@
       "id": 7,
       "name": "oreos",
       "calories": 230,
-      "dietary_preferences": ["vegan", "vegetarian"],
+      "dietary_preferences": [
+        "vegan",
+        "vegetarian"
+      ],
       "serving_size": 1,
       "serving_size_units": "cup"
     },
@@ -62,7 +81,9 @@
       "id": 8,
       "name": "ribeye steak",
       "calories": 500,
-      "dietary_preferences": ["keto"],
+      "dietary_preferences": [
+        "keto"
+      ],
       "serving_size": 4,
       "serving_size_units": "oz"
     },
@@ -70,7 +91,10 @@
       "id": 9,
       "name": "salt and vinegar chips",
       "calories": 90,
-      "dietary_preferences": ["vegan", "vegetarian"],
+      "dietary_preferences": [
+        "vegan",
+        "vegetarian"
+      ],
       "serving_size": 4,
       "serving_size_units": "oz"
     },
@@ -78,12 +102,13 @@
       "id": 10,
       "name": "cheddar cheese",
       "calories": 120,
-      "dietary_preferences": ["keto"],
+      "dietary_preferences": [
+        "keto"
+      ],
       "serving_size": 4,
       "serving_size_units": "oz"
     }
   ],
-
   "users": [
     {
       "id": 1,
@@ -97,10 +122,22 @@
             "servingSize": "2",
             "calories": 176
           }
+        },
+        {
+          "1643497781635": {
+            "food": "oreos",
+            "servingSize": "2",
+            "calories": 460
+          }
+        },
+        {
+          "1643497824345": {
+            "food": "apple",
+            "servingSize": "6",
+            "calories": 528
+          }
         }
       ]
     }
   ]
-
-
 }
