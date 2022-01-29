@@ -9,7 +9,7 @@ const readline = require('readline').createInterface({
 });
 
 readline.prompt();
-readline.on('line', line => {
+readline.on('line', async line => {
     switch (line.trim()) {
 
 
@@ -47,9 +47,23 @@ readline.on('line', line => {
 
 
         case 'log': {
+            const {data} = await axios.get(`http://localhost:3000/food`)
+            const it = data[Symbol.iterator]();
+
+            const actionIterator = {
+                [Symbol.iterator]() {
+                    const positions = [...this.actions];
+                    return {
+                        [Symbol.iterator]() {
+                            return this;
+                        },
+                        next()
+                    }
+                },
+                actions:[askForServingSize, displayCalories],
+            }
+
             readline.question("What would you like to log today?  \n", async (item) => {
-                const {data} = await axios.get(`http://localhost:3000/food`)
-                const it = data[Symbol.iterator]();
                 let position = it.next();
 
                 while (!position.done) {
@@ -64,3 +78,5 @@ readline.on('line', line => {
         }
     }
 })
+
+
